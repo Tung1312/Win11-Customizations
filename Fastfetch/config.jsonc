@@ -1,0 +1,67 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "type": "none"
+  },
+  "display": {
+    "separator": ": ",
+    "color": {
+        "keys": "#769ff0",
+        "title": "#769ff0"
+    },
+    "key": {
+        "width": 12,
+        "type": "string"
+    },
+    "bar": {
+        "width": 10,
+        "char": {
+            "elapsed": "■",
+            "total": "-"
+        }
+    },
+    "percent": {
+        "type": 2,
+        "color": {
+            "green": "green",
+            "yellow": "light_yellow",
+            "red": "light_red"
+        }
+    }
+  },
+  "modules": [
+    {
+      "type": "title",
+      "format": "-----[{host-name-colored}]-----"
+    },
+    {
+      "type": "cpu",
+      "format": "{name} ({cores-physical}/{cores-logical})"
+    },
+    {
+      "type": "gpu",
+      "format": "{name}"
+    },
+    "memory",
+    {
+      "type": "disk",
+      "key": "Disk",
+      "format": "{size-percentage-bar} {size-used}/{size-total}"
+    },
+    {
+      "type": "battery",
+      "key": "Battery",
+      "format": "{capacity-bar} {status} {time-formatted}"
+    },
+    {
+      "type": "uptime",
+      "format": "{formatted} ({boot-time})"
+    },
+    "packages",
+    {
+      "type": "localip",
+      "key": "IP",
+      "format": "{ipv4} ({ifname})"
+    }
+  ]
+}
