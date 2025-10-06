@@ -8,11 +8,9 @@ My personal Windows 11 customization config.
 - [Windhawk](https://windhawk.net/)
 - [ExplorerBlurMica](https://github.com/Maplespe/ExplorerBlurMica)
 
-## Demonstation
+## Demonstration
 
-<video src="showcase.mp4" controls width="600">
-  Your browser does not support the video tag.
-</video>
+[Showcase Video](showcase.mp4)
 
 
 ## Installation
