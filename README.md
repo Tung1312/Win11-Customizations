@@ -1,18 +1,33 @@
 # Win11 Customizations
 
-My personal customization configs for terminal applications ([PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows), [Starship](https://starship.rs/), [Fastfetch](https://github.com/fastfetch-cli/fastfetch))
+My personal Windows 11 customization config.
+- [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows)
+- [Starship](https://starship.rs/)
+- [Fastfetch](https://github.com/fastfetch-cli/fastfetch)
+- [YASB](https://github.com/amnweb/yasb)
+- [Windhawk](https://windhawk.net/)
+- [ExplorerBlurMica](https://github.com/Maplespe/ExplorerBlurMica)
+
+## Demonstation
+
+<video src=".readme/2025-10-07 00-13-37.mp4" controls width="600">
+  Your browser does not support the video tag.
+</video>
+
 
 ## Installation
 
 Install using winget:
 
 ```powershell
-winget install --id Microsoft.PowerShell --source winget
-winget install starship
-winget install fastfetch
+winget install --id Microsoft.PowerShell --id Nilesoft.Shell --id starship --id fastfetch --id yasb --id Windhawk --source winget
 ```
+Pre-configuration setup:
 
-Or download their Github releases:
-- [PowerShell](https://github.com/PowerShell/PowerShell/releases)
-- [Starship](https://github.com/starship/starship/releases)
-- [Fastfetch](https://github.com/fastfetch-cli/fastfetch/releases)
+```powershell
+// Generate fastfetch configuration file
+fastfetch --gen-config
+
+// Enable Powershell stripting
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
+```
