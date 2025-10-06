@@ -4,10 +4,10 @@
     "type": "none"
   },
   "display": {
-    "separator": ": ",
+    "separator": " ",
     "color": {
-        "keys": "#769ff0",
-        "title": "#769ff0"
+        "keys": "#0ab182",
+        "title": "#0ab182"
     },
     "key": {
         "width": 12,
@@ -23,9 +23,9 @@
     "percent": {
         "type": 2,
         "color": {
-            "green": "green",
-            "yellow": "light_yellow",
-            "red": "light_red"
+            "green": "#0add66",
+            "yellow": "#ffda3d",
+            "red": "#eb4455"
         }
     }
   },
@@ -57,7 +57,6 @@
       "type": "uptime",
       "format": "{formatted} ({boot-time})"
     },
-    "packages",
     {
       "type": "localip",
       "key": "IP",
