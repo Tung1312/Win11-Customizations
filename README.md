@@ -10,7 +10,7 @@ My personal Windows 11 customization config.
 
 ## Demonstation
 
-<video src=".readme/2025-10-07 00-13-37.mp4" controls width="600">
+<video src="showcase.mp4" controls width="600">
   Your browser does not support the video tag.
 </video>
 
